@@ -597,21 +597,11 @@ p {
     color:red;
     }
     
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
     .footer .row a i{
     font-size:2em;
     margin:0% 1%;
     }
 
-    /* Default styles for larger screens */
 body {
     background: #ccc;
     margin: 30px 50px;
@@ -671,13 +661,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer .row ul {
-        text-align: center;
-    }
-
-    .footer .row ul li {
-        display: block;
-        margin: 5px 0;
+    .footer .row {
         text-align: center;
     }
 
@@ -719,14 +703,12 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .footer .row ul {
+    .footer .row {
         padding: 0;
         text-align: center;
     }
 
-    .footer .row ul li {
-        display: block;
-        margin: 5px 0;
-        text-align: center;
-    }
+    
+    
+    
 }
