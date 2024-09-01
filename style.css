@@ -611,71 +611,6 @@ p {
     margin:0% 1%;
     }
 
-    /* Default styles for larger screens */
-body {
-    background: #ccc;
-    margin: 30px 50px;
-    line-height: 1.4;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap: 20px;
-}
-
-.main-nav ul {
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 768px) {
-    body {
-        margin: 20px 30px;
-    }
-
-    .wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .main-nav ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .top-container {
-        grid-template-areas:
-            'showcase'
-            'top-box-a'
-            'top-box-b';
-    }
-
-    .showcase h1 {
-        font-size: 3rem;
-    }
-
-    .showcase p {
-        font-size: 1.1rem;
-    }
-
-    .boxes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .language-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .skill-matrix {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer .row ul li {
-        display: block;
-        margin: 5px 0;
-    }
-}
 
 /* Media Query for Mobile Screens */
 @media (max-width: 480px) {
@@ -716,7 +651,7 @@ body {
 
     .footer .row ul li {
         display: block;
-        margin: 2px 0;
+        margin: 5px 0;
     }
 
     .footer .row a {
@@ -724,3 +659,62 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .top-container {
+        grid-template-areas:
+            'showcase'
+            'top-box-a'
+            'top-box-b';
+    }
+
+    .showcase h1 {
+        font-size: 2rem;
+    }
+
+    .showcase p {
+        font-size: 1rem;
+    }
+
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .language-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-matrix {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row ul {
+        padding: 0;
+        text-align: center; 
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 5px 0;
+        text-align: center; 
+    }
+
+    .footer .row a {
+        font-size: 1.2rem;
+    }
+
+    .footer .row a i {
+        font-size: 1.5rem; 
+    }
+
+    .footer .row {
+        margin: 10px 0;
+    }
+}
