@@ -611,15 +611,13 @@ p {
     margin:0% 1%;
     }
 
-
-/* Media Query for Mobile Screens */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     body {
-        margin: 10px;
+        margin: 20px 30px;
     }
 
     .main-nav ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .top-container {
@@ -630,15 +628,15 @@ p {
     }
 
     .showcase h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .showcase p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .boxes {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .language-cards {
@@ -646,26 +644,31 @@ p {
     }
 
     .skill-matrix {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .row ul {
+        text-align: center;
     }
 
     .footer .row ul li {
         display: block;
         margin: 5px 0;
+        text-align: center;
     }
 
     .footer .row a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     body {
         margin: 10px;
     }
 
     .main-nav ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .top-container {
@@ -697,17 +700,17 @@ p {
 
     .footer .row ul {
         padding: 0;
-        text-align: center; 
+        text-align: center;
     }
 
     .footer .row ul li {
         display: block;
         margin: 5px 0;
-        text-align: center; 
+        text-align: center;
     }
 
     .footer .row a {
-        font-size: 1.2rem;
+        font-size: 1.2rem; 
     }
 
     .footer .row a i {
@@ -716,5 +719,65 @@ p {
 
     .footer .row {
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr; 
+    }
+
+    .top-container {
+        grid-template-areas:
+            'showcase'
+            'top-box-a'
+            'top-box-b';
+    }
+
+    .showcase h1 {
+        font-size: 1.8rem;
+    }
+
+    .showcase p {
+        font-size: 0.9rem;
+    }
+
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .language-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-matrix {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .footer .row a {
+        font-size: 1.2rem; 
+    }
+
+    .footer .row a i {
+        font-size: 1.2rem;
+    }
+
+    .footer .row {
+        margin: 5px 0;
     }
 }
