@@ -671,10 +671,16 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .footer .row ul {
+        text-align: center;
+    }
+
     .footer .row ul li {
         display: block;
         margin: 5px 0;
+        text-align: center;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -713,12 +719,14 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .footer .row ul {
+        padding: 0;
+        text-align: center;
+    }
+
     .footer .row ul li {
         display: block;
         margin: 5px 0;
-    }
-
-    .footer .row a {
-        font-size: 1.2rem;
+        text-align: center;
     }
 }
